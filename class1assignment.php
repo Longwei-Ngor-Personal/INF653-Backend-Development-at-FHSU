@@ -126,7 +126,7 @@
     } elseif ($grade >= 60 and $grade <=69){
         echo "Your score: $grade <br>You got a D!";
     } else{
-        echo "Your score: $grade <br>   You got a F!";
+        echo "Your score: $grade <br>You got a F!";
     }
     ?>
 
