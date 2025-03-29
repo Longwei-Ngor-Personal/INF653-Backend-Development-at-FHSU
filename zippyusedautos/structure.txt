@@ -1,0 +1,31 @@
+zippyusedautos/
+│-- admin/                    # Admin dashboard (manages vehicles, makes, types, classes)
+│   ├── index.php             # Admin homepage (lists all vehicles)
+│   ├── view/                 # Admin-specific views
+│   │   ├── vehicle_list_admin.php
+│   │   ├── add_vehicles_view.php
+│   │   ├── edit_vehicles_view.php
+│   │   ├── manage_classes_view.php
+│   │   ├── manage_types_view.php
+│   │   ├── manage_makes_view.php
+│   ├── controllers/          # Handles admin-specific logic
+│   │   ├── add_vehicles.php          # Manage vehicles (add/delete)
+│   │   ├── edit_vehicles.php          # Manage vehicles (update)
+│   |   ├── manage_makes.php             # Manage makes (add/delete)
+│   |   ├── manage_types.php             # Manage types (add/delete)
+│   |   ├── manage_classes.php           # Manage classes (add/delete)
+│
+│-- model/                    # Shared database-related code (used by both public & admin)
+│   ├── database.php          # Connects to the database
+│   ├── vehicles_db.php       # Queries for vehicles
+│   ├── makes_db.php          # Queries for makes
+│   ├── types_db.php          # Queries for types
+│   ├── classes_db.php        # Queries for classes
+│
+│-- view/                     # HTML templates for public site
+│   ├── vehicle_list.php     
+│
+│-- index.php                 # Public homepage (lists all vehicles)
+│-- .htaccess                 # Redirects /admin/ to the admin dashboard
+
+
