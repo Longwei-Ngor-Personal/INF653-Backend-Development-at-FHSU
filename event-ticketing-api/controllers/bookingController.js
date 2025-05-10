@@ -1,6 +1,6 @@
 const Booking = require("../models/booking");
 const Event = require("../models/event");
-const generateQRCode = require("../utils/generateQRcode");
+const generateQRCode = require("../utils/generateQRCode");
 const sendEmail = require("../utils/sendemail");
 
 const getUserBookings = async (req, res) => {
