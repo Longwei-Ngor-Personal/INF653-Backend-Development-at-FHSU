@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-const path = require("path"); // Add this line to handle paths to the views
+const PORT = process.env.PORT || 5000;
 const app = express();
 
 const authRoutes = require("./routes/authRoutes");
@@ -60,8 +60,8 @@ mongoose
     useUnifiedTopology: true
   })
   .then(() => {
-    app.listen(process.env.PORT || 5000, () => {
-      console.log("Server running on http://localhost:5000");
+    app.listen(PORT, () => {
+      console.log(`Server running on http://localhost:${PORT}`);
     });
   })
   .catch((err) => {
