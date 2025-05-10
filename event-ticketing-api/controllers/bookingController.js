@@ -1,5 +1,5 @@
 const Booking = require("../models/booking");
-const Event = require("../models/Event");
+const Event = require("../models/event");
 const generateQRCode = require("../utils/generateQRcode");
 const sendEmail = require("../utils/sendemail");
 
